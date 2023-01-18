@@ -35,3 +35,167 @@ header {
     color: black;
     font-family: "Shrikhand";
 }
+
+.menu_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.backgournd_menu_photo {
+    position: relative;
+}
+
+.backgournd_menu_photo img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.menu_main_title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+
+
+
+
+h2 {
+
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 42px;
+    margin-right: 24px;
+
+
+
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: -38px;
+    background: #f7f7f7;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.menu_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.menu_section_title {
+    margin: 0px;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 40px;
+    margin-left: 13px;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    padding: 12.0345px 5.01437px;
+    margin: 13px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.menu_container h3,
+p {
+    margin: 0px
+}
+
+.menu_container h3 {
+    padding-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+
+
+
+
+.menu_text_container {
+    padding-left: 6px;
+    width: 80%;
+}
+
+.menu_text_container p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.menu_price {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 11px;
+    font-weight: 700;
+}
+
+.menu_price {}
+
+
+/*** footer *******************************************************************/
+
+footer {
+    display: flex;
+    height: 197px;
+    width: 100%;
+    background: #353535;
+    color: white;
+}
+
+footer a p {
+    margin-bottom: 7px;
+}
+
+footer h5 {
+    font-family: 'Shrikhand';
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 16px;
+    line-height: 26px;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.footer_link {
+    display: flex;
+    align-items: center;
+}
+
+.footer_link p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0px;
+    margin-left: 11px;
+}
