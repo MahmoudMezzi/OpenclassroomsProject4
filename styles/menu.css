@@ -163,27 +163,6 @@ p {
 }
 
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slide-inside {
-    0% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(-50px);
-    }
-}
-
-
 
 .menu_text_container {
     padding-left: 6px;
@@ -254,4 +233,29 @@ footer h5 {
 
 .footer_container a:hover {
     text-decoration: underline;
+}
+
+
+
+
+/***** Keyframes ****/
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-inside {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(-50px);
+    }
 }
