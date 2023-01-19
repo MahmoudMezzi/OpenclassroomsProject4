@@ -317,7 +317,7 @@ footer {
     color: white;
 }
 
-footer a p {
+footer a {
     margin-bottom: 7px;
 }
 
@@ -340,10 +340,14 @@ footer h5 {
     align-items: center;
 }
 
-.footer_link p {
+.footer_container a p {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     margin: 0px;
     margin-left: 11px;
+}
+
+.footer_container a:hover {
+    text-decoration: underline;
 }
