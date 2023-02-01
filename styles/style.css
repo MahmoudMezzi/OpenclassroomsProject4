@@ -283,7 +283,7 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     color: black;
 }
 
@@ -304,14 +304,30 @@ button:hover {
 
 
 
-.fa-heart {
-    height: 21.000381469726562px;
-    width: 21.6768798828125px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-
+.fa-regular,
+.far,
+.restantant_text span {
+    font-weight: 400;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    justify-content: flex-end;
+    right: 24px;
+    visibility: visible;
 }
+
+.restantant_text .heart-icon:hover {
+    visibility: hidden;
+}
+
+.restantant_text span {
+    visibility: hidden;
+}
+
+.restantant_text span:hover {
+    visibility: visible;
+}
+
 
 /*** footer *******************************************************************/
 footer {
@@ -357,8 +373,66 @@ footer h5 {
     text-decoration: underline;
 }
 
+.loader {
+    height: 100%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #ffffff;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: -5px -5px 5px #ffffff,
+        10px 10px 10px #ffffff,
+        inset -5px -5px 5px #9356DC,
+        inset 10px 10px 10px #FF79DA;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 10;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: inset -2px -2px 5px #ffffff,
+        inset 3px 3px 5px #ffffff;
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(-225deg,
+            #ffffff 0%,
+            #FF79DA 50%,
+            #9356DC 100%);
+
+    filter: blur(20px);
+    z-index: -1;
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /****** Media Queries *****/
 @media screen and (min-width: 992px) {
+
+
+
     .procedure_main_contain {
         padding: 0px;
     }
@@ -371,6 +445,7 @@ footer h5 {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        width: 84%;
 
     }
 
@@ -382,22 +457,30 @@ footer h5 {
     .procedure_container {
         display: flex;
         align-items: center;
-        width: 322px;
+        width: 30%;
         background: #f6f6f6;
-        margin: 0px
+        margin: 0px;
+        max-width: 322px;
     }
 
     .restaurants {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+
+        box-sizing: border-box;
+        padding: 20px;
+
         justify-items: center;
-        width: 60%;
+        width: 100%;
     }
 
     .restaurants_main_contain h2 {
-        width: auto
+        margin: 0px 0px 0px 30px
+    }
+
+    .restaurants_main_contain {
+        align-items: normal;
     }
 
     .footer_container {
