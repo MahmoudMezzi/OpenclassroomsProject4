@@ -423,7 +423,7 @@ footer h5 {
         flex-direction: row-reverse;
         padding: 25px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-left: 78px;
         margin-right: 78px;
     }

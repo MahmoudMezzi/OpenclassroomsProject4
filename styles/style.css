@@ -1,8 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: auto;
     background-color: #F6F6F6;
     position: relative;
+    max-width: 1400px;
 }
 
 * a {
@@ -544,7 +545,7 @@ footer h5 {
         flex-direction: row-reverse;
         padding: 25px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-left: 78px;
         margin-right: 78px;
     }
