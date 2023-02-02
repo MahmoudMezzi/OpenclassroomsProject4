@@ -326,11 +326,15 @@ button:hover {
 
 .full_heart {
     color: transparent;
-    font-size: 25px;
-    top: 0px;
+    font-size: 26px;
+
+
     position: absolute;
     transition: opacity 0.5s;
+
     left: 0px;
+    top: 0px;
+
     opacity: 0;
 
 }
