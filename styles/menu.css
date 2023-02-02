@@ -64,6 +64,7 @@ header .header_arrow_preced_page a {
     display: flex;
     position: relative;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -71,7 +72,6 @@ header .header_arrow_preced_page a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    align-items: baseline;
     justify-content: center;
 }
 
@@ -89,6 +89,37 @@ h2 {
     margin: 32px 24px 25px 0px;
 
 
+}
+
+.hearts {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    right: 30px;
+    margin: 18px;
+    margin-left: 24px;
+}
+
+.empty_heart {
+    font-size: 24px;
+    color: black;
+}
+
+.full_heart {
+    font-size: 24px;
+    top: 0px;
+    color: #FF79DA;
+    position: absolute;
+    transition: opacity 0.5s;
+    left: 0px;
+    opacity: 0;
+
+}
+
+.hearts:hover .full_heart {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .menu {
@@ -178,7 +209,7 @@ p {
 
 .menu_text_container {
     padding-left: 10px;
-    width: 80%;
+    width: 61%;
     white-space: nowrap;
 }
 
@@ -221,6 +252,7 @@ button {
 button:hover {
     opacity: 0.8;
     cursor: pointer;
+    scale: 1.05;
     transition: .3s;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
@@ -281,7 +313,7 @@ footer h5 {
     margin-left: 11px;
 }
 
-.footer_container a:hover {
+.footer_container a p:hover {
     text-decoration: underline;
 }
 
@@ -391,20 +423,18 @@ footer h5 {
         flex-direction: row-reverse;
         padding: 25px;
         align-items: center;
+        justify-content: space-between;
         margin-left: 78px;
         margin-right: 78px;
     }
 
-    .footer_container a {
-        margin-bottom: 16px;
-        margin-left: 71px;
-    }
-
-    .footer_container h5 {
-        margin-left: 71px;
-    }
-
     footer {
         height: 114px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu_text_container {
+        width: 60%;
     }
 }
