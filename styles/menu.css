@@ -108,17 +108,24 @@ h2 {
 }
 
 .full_heart {
-    font-size: 24px;
+    color: transparent;
+    font-size: 25px;
+
     top: 0px;
-    color: #FF79DA;
+    left: 0px;
+
     position: absolute;
     transition: opacity 0.5s;
-    left: 0px;
+
     opacity: 0;
 
 }
 
 .hearts:hover .full_heart {
+
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
     opacity: 1;
     transition: opacity 0.5s;
 }
