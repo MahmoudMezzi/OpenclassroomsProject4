@@ -409,14 +409,14 @@ footer h5 {
 .loader-border {
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
+
     border: 10px solid transparent;
     border-top: 10px solid #9356DC;
     border-bottom: 10px solid #FF79DA;
     border-radius: 50%;
+
     width: 100px;
     height: 100px;
     margin: auto;
